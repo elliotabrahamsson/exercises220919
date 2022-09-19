@@ -2,13 +2,20 @@ console.log('I am alive!');
 
 function exerciseA() {
     var textboxvalue = document.getElementById('txt').value;
-    const siffror = textboxvalue.split (' ');
+    let siffror = textboxvalue.split (' ');
 
-    for (let i = 0; i < siffror.length; i++) {
-        if (siffror[i] ===theValue) {
-            break;
+
+
+    for(let number = siffror ; number<=siffror; number++){
+        let isPrime = true;
+    
+    for (let i=siffror; i<= number-1;i++){
+        if(number%i===0){
+            isPrime = false;
+            break
         }
-        console.log(siffror);
-    } 
+    }
+    if (isPrime) console.log(number);
+    }
     
 }
