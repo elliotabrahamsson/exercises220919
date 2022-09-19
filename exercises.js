@@ -1,21 +1,11 @@
 console.log('I am alive!');
 
 function exerciseA() {
-    var textboxvalue = document.getElementById('txt').value;
-    let siffror = textboxvalue.split (' ');
+    const siffror = ['2', '3', '5', '7', '11', '13', '17', '19'];
 
-
-
-    for(let number = siffror ; number<=siffror; number++){
-        let isPrime = true;
-    
-    for (let i=siffror; i<= number-1;i++){
-        if(number%i===0){
-            isPrime = false;
-            break
+    for (let i = 0; i = siffror ; i++ ) {
+        if (i > siffror) {
+            console.log(`${place}: ${siffror[place]}`);
         }
     }
-    if (isPrime) console.log(number);
-    }
-    
 }
